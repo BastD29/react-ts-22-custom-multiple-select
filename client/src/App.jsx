@@ -1,11 +1,13 @@
-import { Users } from "./components/Users";
+import { AutoComplete } from "./components/AutoComplete/AutoComplete";
+import { BookDetail } from "./components/BookDetail/BookDetail";
 
-const App = () => {
+import { Route, Routes } from "react-router-dom";
+
+export default function App() {
   return (
-    <>
-      <Users />
-    </>
+    <Routes>
+      <Route path="/books" element={<AutoComplete />} />
+      <Route path="/books/:id" element={<BookDetail />} />
+    </Routes>
   );
-};
-
-export { App };
+}

@@ -1,0 +1,12 @@
+.search-result {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-result:hover {
+  background-color: lightblue;
+}
+
+.search-result.selected {
+  background-color: lightblue;
+}
