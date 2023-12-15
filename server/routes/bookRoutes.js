@@ -4,7 +4,7 @@ const {
   getBooks,
   createBooks,
   getBookById,
-} = require("../controllers/bookController2");
+} = require("../controllers/bookController");
 
 router.get("/", getBooks);
 router.get("/:id", getBookById);
